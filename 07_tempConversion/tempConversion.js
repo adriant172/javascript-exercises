@@ -1,8 +1,13 @@
-const ftoc = function() {
-
+const ftoc = function(fTemp) {
+  result = (fTemp -32) * (5 / 9);
+  cTemp =Number(result.toFixed(1));
+  return cTemp;
 };
 
-const ctof = function() {
+const ctof = function(cTemp) {
+  result = cTemp * (9 / 5) + 32;
+  fTemp = Number(result.toFixed(1));
+  return fTemp;
 
 };
 
